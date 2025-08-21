@@ -86,3 +86,31 @@ section {
         align-items: flex-start;
     }
 }
+button {
+  cursor: pointer;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 10px;
+  background-color: #2563eb;
+  color: white;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+#skillsList {
+  list-style: none;
+  padding: 0;
+  margin: 12px 0;
+}
+
+#skillsList li {
+  padding: 6px 10px;
+  background: #fff;
+  margin-bottom: 6px;
+  border-radius: 10px;
+}
+
+#message {
+  margin-top: 8px;
+  font-weight: bold;
+}

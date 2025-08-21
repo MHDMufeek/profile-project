@@ -8,6 +8,23 @@ console.log("Name:,name");
 console.log("Skills:",skills);
 
 //Button action
-function showMessage() {
-    alert("Thank for visiting my profile!")
-}
+document.getElementById("btn").addEventListener("click", function() {
+  document.getElementById("message").innerText = "Thanks for visiting my portfolio 🚀";
+});
+//skills
+document.getElementById("toggleSkills").addEventListener("click", function() {
+  let skills = document.getElementById("skillsList");
+  if (skills.style.display === "none") {
+    skills.style.display = "block";
+  } else {
+    skills.style.display = "none";
+  }
+});
+//footer
+document.getElementById("year").innerText = new Date().getFullYear();
+
+//theme
+document.getElementById("themeBtn").addEventListener("click", function() {
+  document.body.style.backgroundColor = 
+    document.body.style.backgroundColor === "lightblue" ? "white" : "lightblue";
+});
