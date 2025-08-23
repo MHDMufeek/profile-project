@@ -7,12 +7,18 @@
   <title>Mufeek's Profile</title>
 </head>
 <body>
+   <!-- Alert Banner -->
+  <div id="alertBanner" role="alert" aria-live="assertive">
+    <span id="alertText">👋 Welcome to Mufeek's Portfolio</span>
+    <button id="alertClose" aria-label="Close alert">×</button>
+  </div>
   <header>
     <h1>Mohamed Mufeek</h1>
     <p>IT Graduate | Web Developer | Tech Enthusiast</p>    
   </header>
 
   <main>
+    
     <section id="about">
       <h2>About Me</h2>
       <p>I have completed my HNDIT and I love working on full-stack web development projects.</p>      
@@ -33,8 +39,23 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p><a href="https://www.linkedin.com/in/mohamed-mufeek-28983134a">My LinkedIn</a></p>
-    </section>
+      <section id="contact">
+  <h2>Contact</h2>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" rows="4" required></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+  <p id="formMessage"></p>
+</section>
+
     <button id="btn">Click Me</button>
       <p id="message"></p>
       <button id="themeBtn">Change Theme</button>
